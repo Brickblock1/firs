@@ -60,19 +60,24 @@ spriteset_jetty_se_nw = industry.add_spriteset(
     always_draw=1,
 )
 spriteset_jetty_ne_sw = industry.add_spriteset(
-    sprites=[(80, 60, 64, 39, -31, -7)], always_draw=1
+    sprites=[(80, 60, 64, 39, -31, -7)],
+    always_draw=1,
 )
 spriteset_jetty_slope_nw_se = industry.add_spriteset(
     sprites=[(150, 60, 64, 39, -31, -7)],
+    always_draw=1,
 )
 spriteset_jetty_slope_ne_sw = industry.add_spriteset(
     sprites=[(220, 60, 64, 39, -31, -7)],
+    always_draw=1,
 )
 spriteset_jetty_slope_se_nw = industry.add_spriteset(
     sprites=[(290, 60, 64, 39, -31, -7)],
+    always_draw=1,
 )
 spriteset_jetty_slope_sw_ne = industry.add_spriteset(
     sprites=[(360, 60, 64, 39, -31, -7)],
+    always_draw=1,
 )
 spriteset_shed = industry.add_spriteset(sprites=[(80, 10, 64, 39, -31, 0)], zoffset=18)
 spriteset_crane_1a = industry.add_spriteset(

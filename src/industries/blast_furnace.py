@@ -50,15 +50,11 @@ industry.add_tile(
     ),
 )
 
-spriteset_ground = industry.add_spriteset(
-    type="hard_standing_dirt",
-)
+spriteset_ground = industry.add_sprite(sprite_number="GROUNDTILE_MUD_TRACKS")
 spriteset_ground_overlay = industry.add_spriteset(
     type="empty",
 )
-spriteset_ground_tile_dark = industry.add_spriteset(
-    sprites=[(500, 10, 64, 122, -31, -91)],
-)
+spriteset_ground = industry.add_sprite(sprite_number="GROUNDTILE_MUD_TRACKS")
 spriteset_greeble = industry.add_spriteset(
     sprites=[(150, 10, 64, 122, -31, -91)],
 )
@@ -99,11 +95,7 @@ spriteset_large_shed_front_part_animated = industry.add_spriteset(
     animation_rate=1,
     custom_sprite_selector="(animation_frame < 10) ? (animation_frame % 10) : 0",
 )
-spriteset_ground_tile_dark_animated = industry.add_spriteset(
-    sprites=[(500, 10, 64, 122, -31, -91)],
-    # autofills number of frames to match another spriteset which is animated etc (can get frame count from the other spriteset if defined already)
-    num_sprites_to_autofill=len(spriteset_large_shed_front_part_animated.sprites),
-)
+spriteset_ground_tile_dark_animated = industry.add_sprite(sprite_number="GROUNDTILE_MUD_TRACKS")
 spriteset_casting_shed_animated = industry.add_spriteset(
     sprites=[
         (10, 310, 64, 122, -31, -91),

@@ -57,9 +57,7 @@ industry.add_tile(
     ),
 )
 
-sprite_ground = industry.add_spriteset(
-    type="hard_standing_dirt",
-)
+sprite_ground = industry.add_sprite(sprite_number="GROUNDTILE_MUD_TRACKS")
 spriteset_ground_overlay = industry.add_spriteset(type="empty")
 
 spriteset_silo = industry.add_spriteset(

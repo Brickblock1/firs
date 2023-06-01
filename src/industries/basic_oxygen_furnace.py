@@ -55,9 +55,7 @@ industry.add_tile(
     ),
 )
 
-spriteset_ground = industry.add_spriteset(
-    type="hard_standing_dirt",
-)
+spriteset_ground = industry.add_sprite(sprite_number="GROUNDTILE_MUD_TRACKS")
 spriteset_ground_overlay = industry.add_spriteset(
     type="empty",
 )
@@ -137,11 +135,7 @@ spriteset_caster_gantry_overlay_animated = industry.add_spriteset(
     # autofills number of frames to match another spriteset which is animated etc (can get frame count from the other spriteset if defined already)
     num_sprites_to_autofill=len(spriteset_caster_crane_animated.sprites),
 )
-spriteset_ground_tile_animated_crane = industry.add_spriteset(
-    type="hard_standing_dirt",
-    # autofills number of frames to match another spriteset which is animated etc (can get frame count from the other spriteset if defined already)
-    num_sprites_to_autofill=len(spriteset_caster_crane_animated.sprites),
-)
+spriteset_ground_tile_animated_crane = industry.add_sprite(sprite_number="GROUNDTILE_MUD_TRACKS")
 spriteset_caster_metal_run_animated = industry.add_spriteset(
     sprites=[
         # repeat the empty frame until the 1 frame after the crane pour starts
@@ -190,11 +184,7 @@ spriteset_caster_machinery_animated = industry.add_spriteset(
     # autofills number of frames to match another spriteset which is animated etc (can get frame count from the other spriteset if defined already)
     num_sprites_to_autofill=len(spriteset_caster_metal_run_animated.sprites),
 )
-spriteset_ground_tile_animated_metal_run = industry.add_spriteset(
-    type="hard_standing_dirt",
-    # autofills number of frames to match another spriteset which is animated etc (can get frame count from the other spriteset if defined already)
-    num_sprites_to_autofill=len(spriteset_caster_metal_run_animated.sprites),
-)
+spriteset_ground_tile_animated_metal_run = industry.add_sprite(sprite_number="GROUNDTILE_MUD_TRACKS")
 sprite_smoke_1 = industry.add_smoke_sprite(
     smoke_type="white_smoke_big",
     xoffset=1,
